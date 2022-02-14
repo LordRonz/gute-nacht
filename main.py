@@ -4,6 +4,7 @@ from random import choice
 from data.gifs import gifs
 from data.quotes import quotes
 from utils.logger import get_logger
+import config
 
 
 def main():
@@ -14,7 +15,7 @@ def main():
     logger = get_logger()
 
     if not WEBHOOK_URL:
-        logger.error('Webhook url cannot be empty!')
+        logger.error("Webhook url cannot be empty!")
         return
 
     quote = choice(quotes)
@@ -22,6 +23,8 @@ def main():
     gif = choice(gifs)
 
     payload = {
+        "username": config.USERNAME,
+        "avatar_url": config.AVATAR_URL,
         "content": f"**{quote}** :sleeping: :full_moon_with_face:\n{gif}",
     }
 
