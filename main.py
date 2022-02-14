@@ -18,7 +18,12 @@ def main():
 
     content = f"**{quote}** :sleeping: :full_moon_with_face:\n{gif}"
 
-    webhook = DiscordWebhook(url=WEBHOOK_URL, content=content, username=config.USERNAME, avatar_url=config.AVATAR_URL)
+    webhook = DiscordWebhook(
+        url=WEBHOOK_URL,
+        content=content,
+        username=config.USERNAME,
+        avatar_url=config.AVATAR_URL,
+    )
 
     webhook.execute()
 
