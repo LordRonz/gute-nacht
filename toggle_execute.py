@@ -2,6 +2,7 @@ import argparse
 
 
 def get_args():
+    """Parse argument given to program"""
     parser = argparse.ArgumentParser(description="Toggle execute gute nacht")
     parser.add_argument(
         "-n", "--no-execute", action="store_true", help="Don't execute gute nacht today"
@@ -18,6 +19,7 @@ EXECUTE_FALSE = "EXECUTE_TODAY: bool = False\n"
 
 
 def toggle(yes=True, neutral=True):
+    """Toggle the config file"""
     with open("./config.py", "r+") as conf:
         conf_lines = list(conf)
 
