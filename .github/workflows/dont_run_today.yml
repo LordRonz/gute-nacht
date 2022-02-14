@@ -29,5 +29,4 @@ jobs:
         run: |
           git config user.name "${GITHUB_ACTOR}"
           git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git diff --quiet && git diff --staged --quiet || git commit -am "chore: dont run gute nacht today :ok_hand:"
-          git diff --quiet && git diff --staged --quiet || git push
+          git diff --quiet && git diff --staged --quiet || (git commit -am "chore: dont run gute nacht today :ok_hand:" && git push)
