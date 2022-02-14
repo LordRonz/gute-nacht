@@ -9,8 +9,8 @@ import config
 
 def main():
     read_env()
-
-    WEBHOOK_URL: str = os.getenv("WEBHOOK_URL", "")
+    is_ci = os.getenv("CI", "") == "true"
+    WEBHOOK_URL: str = os.getenv("WEBHOOK_URL_DEV" if is_ci else "WEBHOOK_URL", "")
 
     logger = get_logger()
 
