@@ -9,6 +9,11 @@ from discord_webhook.discord_webhook import DiscordWebhook
 
 def main():
     read_env()
+
+    if not config.EXECUTE_TODAY:
+        print("Don't forget to say it mister!")
+        return
+
     is_ci = os.getenv("CI", "") == "true"
     webhook_url: str = os.getenv("WEBHOOK_URL_DEV" if is_ci else "WEBHOOK_URL", "")
     if is_ci and not webhook_url:
