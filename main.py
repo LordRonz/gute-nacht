@@ -33,14 +33,16 @@ def main():
         avatar_url=config.AVATAR_URL,
     )
 
-    webhook.add_embed({
-        "title": content,
-        "color": 0x631313,
-        "image": {
-            "url": gif,
-        },
-        "timestamp": datetime.now().isoformat() + datetime.now(pytz.timezone("Asia/Jakarta")).isoformat()[26:]
-    })
+    webhook.add_embed(
+        {
+            "title": content,
+            "color": 0x631313,
+            "image": {
+                "url": gif,
+            },
+            "timestamp": datetime.now(pytz.timezone("Asia/Jakarta")).isoformat()[:26],
+        }
+    )
 
     webhook.execute()
 
