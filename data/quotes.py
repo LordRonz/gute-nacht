@@ -8,4 +8,5 @@ quotes = [
     "Night night. Sleep tight.",
     "May the moon and stars smile upon you as you sleep",
     "Have a great nights rest.",
+    "Nite nite & sweet dreams",
 ]
