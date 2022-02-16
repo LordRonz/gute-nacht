@@ -23,14 +23,21 @@ def main():
 
     gif = choice(gifs)
 
-    content = f"**{quote}** :sleeping: :full_moon_with_face:\n{gif}"
+    content = f"**{quote}** :sleeping: :full_moon_with_face:"
 
     webhook = DiscordWebhook(
         url=webhook_url,
-        content=content,
         username=config.USERNAME,
         avatar_url=config.AVATAR_URL,
     )
+
+    webhook.add_embed({
+        "title": content,
+        "color": 0x631313,
+        "image": {
+            "url": gif,
+        },
+    })
 
     webhook.execute()
 
