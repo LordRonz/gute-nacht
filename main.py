@@ -40,7 +40,7 @@ def main():
             "image": {
                 "url": gif,
             },
-            "timestamp": datetime.now(pytz.timezone("Asia/Jakarta")).isoformat()[:26],
+            "timestamp": datetime.now().isoformat(),
         }
     )
 
