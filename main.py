@@ -26,7 +26,9 @@ def main():
 
     gif = choice(gifs)
 
-    content = f"**{quote}** :sleeping: :full_moon_with_face: <:jibril:914851644674572308>"
+    content = (
+        f"**{quote}** :sleeping: :full_moon_with_face: <:jibril:914851644674572308>"
+    )
 
     thumbnail = choice(thumbnails)
 
