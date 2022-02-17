@@ -1,11 +1,10 @@
 import os
 from utils.read_env import read_env
-from random import choice
+from secrets import choice
 from data.gifs import gifs
 from data.quotes import quotes
 import config
 from discord_webhook.discord_webhook import DiscordWebhook
-import pytz
 from datetime import datetime
 
 
