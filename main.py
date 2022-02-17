@@ -5,6 +5,7 @@ from data.gifs import gifs
 from data.quotes import quotes
 from data.thumbnails import thumbnails
 from data.embed_urls import embed_urls
+from data.emojis import emojis
 import config
 from discord_webhook.discord_webhook import DiscordWebhook
 from datetime import datetime
@@ -26,9 +27,18 @@ def main():
 
     gif = choice(gifs)
 
-    content = (
-        f"**{quote}** :sleeping: :full_moon_with_face: <:jibril:914851644674572308>"
-    )
+    emoji = choice(emojis)
+
+    title = f"**{quote}** :sleeping: :full_moon_with_face: <{'a' if emoji['animated'] else ''}:{emoji['name']}:{emoji['id']}>"
+
+    description_list = []
+    for _ in range(3):
+        emoji = choice(emojis)
+        description_list.append(
+            f"<{'a' if emoji['animated'] else ''}:{emoji['name']}:{emoji['id']}>"
+        )
+
+    description = " ".join(description_list)
 
     thumbnail = choice(thumbnails)
 
@@ -42,7 +52,8 @@ def main():
 
     webhook.add_embed(
         {
-            "title": content,
+            "title": title,
+            "description": description,
             "color": 0x631313,
             "image": {
                 "url": gif,
