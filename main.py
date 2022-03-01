@@ -40,6 +40,12 @@ def main():
 
     description = " ".join(description_list)
 
+    tsuki = choice([0 for _ in range(70)] + [1 for _ in range(25)] + [2 for _ in range(5)])
+    if tsuki == 1:
+        description += "\nP.S. : ||Tsuki ga kirei desu ne?||"
+    elif tsuki == 2:
+        description += "\nP.S. : ||Aishiteru||"
+
     thumbnail = choice(thumbnails)
 
     embed_url = choice(embed_urls)
