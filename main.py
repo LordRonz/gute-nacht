@@ -46,6 +46,10 @@ def main():
     elif tsuki == 2:
         description += "\nP.S. : ||Aishiteru||"
 
+    pps = choice([True, False])
+    if pps and tsuki:
+        description += "\nP.P.S : ||I really mean it||"
+
     thumbnail = choice(thumbnails)
 
     embed_url = choice(embed_urls)
