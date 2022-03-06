@@ -40,13 +40,13 @@ def main():
 
     description = " ".join(description_list)
 
-    tsuki = choice([0 for _ in range(70)] + [1 for _ in range(25)] + [2 for _ in range(5)])
+    tsuki = choice([0] * 70 + [1] * 25 + [2] * 5)
     if tsuki == 1:
         description += "\nP.S. : ||Tsuki ga kirei desu ne?||"
     elif tsuki == 2:
         description += "\nP.S. : ||Aishiteru||"
 
-    pps = choice([True, False])
+    pps = choice([True, True, False])
     if pps and tsuki:
         description += "\nP.P.S : ||I really mean it||"
 
