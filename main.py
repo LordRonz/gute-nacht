@@ -9,6 +9,7 @@ from data.emojis import emojis
 import config
 from discord_webhook.discord_webhook import DiscordWebhook
 from datetime import datetime
+from base64 import b64decode
 
 
 def main():
@@ -42,13 +43,13 @@ def main():
 
     tsuki = choice([0] * 70 + [1] * 25 + [2] * 5)
     if tsuki == 1:
-        description += "\nP.S. : ||Tsuki ga kirei desu ne?||"
+        description += f"\nP.S. : ||{b64decode('VHN1a2kgZ2Ega2lyZWkgZGVzdSBuZT8=').decode()}||"
     elif tsuki == 2:
-        description += "\nP.S. : ||Aishiteru||"
+        description += f"\nP.S. : ||{b64decode('QWlzaGl0ZXJ1').decode()}||"
 
     pps = choice([True, True, False])
     if pps and tsuki:
-        description += "\nP.P.S : ||I really mean it||"
+        description += f"\nP.P.S : ||{b64decode('SSByZWFsbHkgbWVhbiBpdA==').decode()}||"
 
     thumbnail = choice(thumbnails)
 
@@ -73,6 +74,10 @@ def main():
                 "url": thumbnail,
             },
             "url": embed_url,
+            "footer": {
+                "text": "Sincerely, A",
+                "icon_url": "https://www.freeiconspng.com/uploads/love-png-5.png",
+            },
         }
     )
 
