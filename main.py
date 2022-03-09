@@ -2,7 +2,7 @@ import os
 from utils.read_env import read_env
 from secrets import choice
 from data.gifs import gifs
-from data.quotes import quotes
+from data.quotes import get_quote
 from data.thumbnails import thumbnails
 from data.embed_urls import embed_urls
 from data.emojis import emojis
@@ -24,7 +24,7 @@ def main():
     if is_ci and not webhook_url:
         webhook_url = os.getenv("WEBHOOK_URL", "")
 
-    quote = choice(quotes)
+    quote = get_quote()
 
     gif = choice(gifs)
 
