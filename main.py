@@ -41,11 +41,15 @@ def main():
 
     description = " ".join(description_list)
 
-    tsuki = choice([0] * 70 + [1] * 25 + [2] * 5)
+    tsuki = choice([0] * 35 + [1] * 30 + [2] * 20 + [3] * 10 + [4] * 5)
     if tsuki == 1:
         description += f"\nP.S. : ||{b64decode('VHN1a2kgZ2Ega2lyZWkgZGVzdSBuZT8=').decode()}||"
     elif tsuki == 2:
         description += f"\nP.S. : ||{b64decode('QWlzaGl0ZXJ1').decode()}||"
+    elif tsuki == 3:
+        description += f"\nP.S. : ||{b64decode('UmVtaW5kZXI6IEFrdSBzYXlhbmdnZyBrYW11IDwz').decode()}||"
+    elif tsuki == 4:
+        description += f"\nP.S. : ||{b64decode('UmVtaW5kZXI6IEFrdSBzYXlhbmdnZyBrYW11IDwz').decode()}||"
 
     pps = choice([True, True, False])
     if pps and tsuki:
