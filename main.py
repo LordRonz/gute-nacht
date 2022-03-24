@@ -49,7 +49,7 @@ def main():
     elif tsuki == 3:
         description += f"\nP.S. : ||{b64decode('UmVtaW5kZXI6IEFrdSBzYXlhbmdnZyBrYW11IDwz').decode()}||"
     elif tsuki == 4:
-        description += f"\nP.S. : ||{b64decode('UmVtaW5kZXI6IEFrdSBzYXlhbmdnZyBrYW11IDwz').decode()}||"
+        description += f"\nP.S. : ||{b64decode('SSB3aWxsIGFsd2F5cyBsb3ZlIHlvdSBhbmQgYmUgYnkgeW91ciBzaWRl').decode()}||"
 
     pps = choice([True, True, False])
     if pps and tsuki:
