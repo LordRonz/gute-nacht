@@ -14,5 +14,6 @@ quotes = [
     "Tml0ZSBuaXRlICYgc3dlZXQgZHJlYW1z",
 ]
 
+
 def get_quote():
     return b64decode(choice(quotes)).decode()
