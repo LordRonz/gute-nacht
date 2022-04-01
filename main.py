@@ -43,7 +43,9 @@ def main():
 
     tsuki = choice([0] * 35 + [1] * 30 + [2] * 20 + [3] * 10 + [4] * 5)
     if tsuki == 1:
-        description += f"\nP.S. : ||{b64decode('VHN1a2kgZ2Ega2lyZWkgZGVzdSBuZT8=').decode()}||"
+        description += (
+            f"\nP.S. : ||{b64decode('VHN1a2kgZ2Ega2lyZWkgZGVzdSBuZT8=').decode()}||"
+        )
     elif tsuki == 2:
         description += f"\nP.S. : ||{b64decode('QWlzaGl0ZXJ1').decode()}||"
     elif tsuki == 3:
