@@ -18,4 +18,7 @@ gifs = [
     "https://c.tenor.com/sUgACjnsxpIAAAAC/milk-and.gif",
     "https://c.tenor.com/G5FScV4As7wAAAAC/good-night.gif",
     "https://c.tenor.com/CX3_RmzsQfwAAAAC/milk-and-mocha-bear-relax.gif",
+    "https://c.tenor.com/lNl2wecq1H8AAAAi/good-night.gif",
+    "https://c.tenor.com/Rae3dbdO7vYAAAAC/cudd-milk-and-mocha.gif",
+    "https://c.tenor.com/ctEcPhAMNoQAAAAC/i-miss-you.gif",
 ]
