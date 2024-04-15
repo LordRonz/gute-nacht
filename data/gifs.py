@@ -29,4 +29,7 @@ gifs = [
     "https://c.tenor.com/EYtKgyz0to0AAAAC/night-crypto.gif",
     "https://c.tenor.com/AyMq-80B-ZUAAAAC/boa-noite.gif",
     "https://c.tenor.com/8lphpsGT5vMAAAAC/sleep.gif",
+    "https://c.tenor.com/Cspt4CCdhyEAAAAC/mi-amor.gif",
+    "https://c.tenor.com/Fycn8nr-2AEAAAAd/goodnight-good.gif",
+    "https://c.tenor.com/Nf0owRYJg68AAAAC/penguin-love.gif",
 ]
