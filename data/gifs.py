@@ -27,4 +27,6 @@ gifs = [
     "https://c.tenor.com/ZGkluEMgEiMAAAAC/good-night-komal.gif",
     "https://c.tenor.com/fNNVXDHYmrgAAAAC/snuggle-cute.gif",
     "https://c.tenor.com/EYtKgyz0to0AAAAC/night-crypto.gif",
+    "https://c.tenor.com/AyMq-80B-ZUAAAAC/boa-noite.gif",
+    "https://c.tenor.com/8lphpsGT5vMAAAAC/sleep.gif",
 ]
