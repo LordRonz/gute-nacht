@@ -21,4 +21,10 @@ gifs = [
     "https://c.tenor.com/lNl2wecq1H8AAAAi/good-night.gif",
     "https://c.tenor.com/Rae3dbdO7vYAAAAC/cudd-milk-and-mocha.gif",
     "https://c.tenor.com/ctEcPhAMNoQAAAAC/i-miss-you.gif",
+    "https://c.tenor.com/RGqF8XGZJfkAAAAC/peach-goma.gif",
+    "https://c.tenor.com/zIUIJgtOnpEAAAAC/bubba-love.gif",
+    "https://c.tenor.com/RLApYkDEeMMAAAAC/kiss-goodnight.gif",
+    "https://c.tenor.com/ZGkluEMgEiMAAAAC/good-night-komal.gif",
+    "https://c.tenor.com/fNNVXDHYmrgAAAAC/snuggle-cute.gif",
+    "https://c.tenor.com/EYtKgyz0to0AAAAC/night-crypto.gif",
 ]
