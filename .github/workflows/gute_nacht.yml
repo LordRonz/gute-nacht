@@ -3,7 +3,7 @@ name: Gute nacht
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 16 * * *'
+    - cron: '0 15 * * *'
 
 jobs:
   run_main:
