@@ -1,5 +1,11 @@
+use data::description;
+use data::description::get_description;
+use data::embed_urls;
+use data::embed_urls::get_embed_urls;
+use data::thumbnails::get_thumbnails;
 use dotenv::dotenv;
 mod data;
+mod discord_webhook;
 use data::gifs::*;
 use data::quotes::*;
 
@@ -22,11 +28,15 @@ fn main() {
 
     let gif = get_gifs();
 
-    let emoji = get_emojis();
+    let thumbnail = get_thumbnails();
+
+    let embed_url = get_embed_urls();
 
     for quote in quotes.iter() {
         println!("{}", quote)
     }
 
-    println!("{}", emoji.name);
+    let description = get_description();
+
+    println!("{}", description);
 }
